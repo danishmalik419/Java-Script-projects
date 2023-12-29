@@ -1,5 +1,7 @@
 body{
-    background-color: rgb(4,29,29);
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
 }
 .container{
     width: 360px;
@@ -9,9 +11,34 @@ body{
     margin-left: 33px;
     margin-top: 5px;
 }
-.input{
+input{
     width: 270px;
     padding: 8px;
-    border: 2px solid rgb(6,145,145);
+    border: 2px solid aquamarine;
     outline: none;
+    font-size: 20px;
+}
+button{
+    width: 60px;
+    height: 41px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+.text ul{
+    position: relative;
+    background-color: aquamarine;
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    padding: 7px;
+}
+.text ul i{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
 }
