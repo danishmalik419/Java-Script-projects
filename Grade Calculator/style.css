@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #142a65;
+}
+
+.container .card{
+    width: 426px;
+    height: 60vh;
+    border-radius: 17px;
+    background: #142a65;
+    border-top: 1px solid #02123d;
+    box-shadow: rgb(21, 21, 22) 0px 20px 30px -10px;
+}
+
+.flex-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h2{
+    position: relative;
+    padding-bottom: 39px;
+    top: 20%;
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: aqua;
+}
+
+.input{
+    margin: 10px 0px;
+}
+
+.input input{
+    width: 92%;
+    height: 42px;
+    margin: 12px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    text-indent: 20px;
+    border-radius: 18px;
+    padding: 3px 2px;
+    transition: transform 1s;
+}
+
+.input input:hover{
+    transform: perspective(200px) rotateY(10deg);
+}
+
+::placeholder{
+    font-weight: bold;
+    text-indent: 30px;
+    padding: 3px 5px;
+    color: #000;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    padding: 14px 65px;
+    color: white;
+    border-radius: 31px;
+    box-shadow: rgba(0, 0, 0,0.35) 0px 5px 15px;
+    margin: -1px 92px;
+    font-size: 10px;
+    background-image: linear-gradient(#9ec14c, #41b14f);
+    transition: transform 1s;
+}
+
+button:hover{
+    transform: perspective(200px) rotateX(30deg);
+}
+
+p{
+    font-weight: bold;
+    text-align: center;
+    padding: 3px 15px;
+    color: white;
+}

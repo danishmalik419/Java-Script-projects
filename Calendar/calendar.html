@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css">
+    <link rel="stylesheet" href="evo-calendar.min.css">
+    <title>Calendar</title>
+</head>
+<body>
+
+    <div class="hero">
+
+        <div id="calendar"></div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="evo-calendar.min.js"></script>
+    <script>
+        $(document).ready(function() {
+    $('#calendar').evoCalendar({
+        // theme: "Midnight Blue",
+        calendarEvents: [
+        {
+            id: 'events1', 
+            name: "New Year", 
+            date: "January/1/2024",
+            type: "holiday", 
+            everyYear: true 
+        },
+        {
+            id: 'events2', 
+            name: "Teacher's Day", 
+            date: "September/5/2024",
+            type: "holiday", 
+            everyYear: true 
+        },
+        {
+            id: 'events3', 
+            name: "Children's Day", 
+            date: "November/14/2024",
+            type: "holiday", 
+            everyYear: true 
+        },
+        {
+            name: "Vacation Leave",
+            badge: "02/13 - 02/15", 
+            date: ["February/13/2024", "February/15/2024"], 
+            description: "Vacation leave for 3 days.",
+            type: "event",
+            color: "#63d867" 
+        }
+        ]
+    });
+    })
+
+    </script>
+</body>
+</html>
